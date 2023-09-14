@@ -33,6 +33,7 @@ while menu:
         print(f"{firstname} {r_name} {lastname}")
     elif selection == "3":
         print("\nALL NICKNAMES")
+        print(nickname_list, sep = "\n" )
     elif selection == "4":
         print("\nADD NICKNAME")
         new_nicnam = input("Please enter nickname to add:")
