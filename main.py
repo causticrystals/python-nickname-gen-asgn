@@ -26,15 +26,15 @@ while menu:
 
     #action based on input
     if selection == "1":
-        print("CHANGE NAME")
+        print("\nCHANGE NAME")
     elif selection == "2":
-        print("RANDOM NICKNAME")
+        print("\nRANDOM NICKNAME")
     elif selection == "3":
-        print("ALL NICKNAMES")
+        print("\nALL NICKNAMES")
     elif selection == "4":
-        print("ADD NICKNAME")
+        print("\nADD NICKNAME")
     elif selection == "5":
-        print("REMOVE NICKNAME")
+        print("\nREMOVE NICKNAME")
     elif selection == "6":
         print("Bye :-)")
         menu = False
