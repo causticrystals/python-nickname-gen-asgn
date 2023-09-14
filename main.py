@@ -10,7 +10,7 @@ while menu:
     #variables
     firstname = "John"
     lastname = "Doe"
-    nickname_list = ["Crusher", "the Scientist", "Twinkle-Toes", "the Coder", "the Jester", "the Sloth", "Quick-Silver"]
+    nickname_list = ['"Crusher"', '"the Scientist"', '"Twinkle-Toes"', '"the Coder"', '"the Jester"', '"the Sloth"', '"Quick-Silver"']
 
     #print menu options
     print(f"\nMAIN MENU ({firstname} {lastname})")
@@ -33,7 +33,7 @@ while menu:
         print(f"{firstname} {r_name} {lastname}")
     elif selection == "3":
         print("\nALL NICKNAMES")
-        print(nickname_list, sep = "\n" )
+        print(*nickname_list, sep ="\n")
     elif selection == "4":
         print("\nADD NICKNAME")
         new_nicnam = input("Please enter nickname to add:")
