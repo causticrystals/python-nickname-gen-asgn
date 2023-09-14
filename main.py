@@ -25,16 +25,16 @@ while menu:
     selection = input("\nSelect an option 1-6:")
 
     #action based on input
-    if selection == "1": #incomplete
+    if selection == "1":
         print("\nCHANGE NAME")
-    elif selection == "2": #done
+    elif selection == "2": 
         print("\nRANDOM NICKNAME") 
         r_name = random.choice(nickname_list)
         print(f'{firstname} "{r_name}" {lastname}')
-    elif selection == "3": #incomplete
+    elif selection == "3":
         print("\nALL NICKNAMES")
         print(*nickname_list, sep ="\n")
-    elif selection == "4": #done
+    elif selection == "4": 
         print("\nADD NICKNAME")
         new_nicnam = input("Please enter nickname to add:")
         #test input
@@ -42,7 +42,7 @@ while menu:
             print(f"{new_nicnam} is already in the list!")
         else:
             nickname_list.append(new_nicnam)
-    elif selection == "5": #done
+    elif selection == "5": 
         print("\nREMOVE NICKNAME")
         nicnam_gone = input("Please enter nickname to remove:")
         #test input
@@ -51,6 +51,6 @@ while menu:
             print(f'{nicnam_gone} removed from list, bye forever "{nicnam_gone}"!!')
         else:
             print(f"{nicnam_gone} was not found in nickname list sorry :-(")
-    elif selection == "6": #done
+    elif selection == "6": 
         print("Bye :-)")
         menu = False
